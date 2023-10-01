@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav-div">
+        <nav id="nav-pc">
+          <h1>KURIcafe</h1>
+          <div>
+            <ul id="ul-pc">
+              <li><a href="index.html#menu">menu</a></li>
+              <li><a href="index.html#about">about</a></li>
+              <li><a href="index.html#news">news</a></li>
+            </ul>
+          </div>
+          <img
+            id="menu-sp"
+            src="img/2.png"
+            alt="ナビゲーションを開く"
+            onclick="document.getElementById('nav-sp').style.display = 'block'"
+          />
+        </nav>
+
+        <!-- スマホ用ナビゲーション -->
+        <nav id="nav-sp">
+          <img
+            id="close"
+            src="img/4.jpg"
+            alt="ナビゲーションを閉じる"
+            onclick="document.getElementById('nav-sp').style.display = 'none'"
+          />
+          <a
+            class="menu-a"
+            href="index.html"
+            onclick="document.getElementById('nav-sp').style.display = 'none'"
+            >home</a
+          >
+          <a
+            class="menu-a"
+            href="index.html#menu"
+            onclick="document.getElementById('nav-sp').style.display = 'none'"
+            >menu</a
+          >
+          <a
+            class="menu-a"
+            href="index.html#about"
+            onclick="document.getElementById('nav-sp').style.display = 'none'"
+            >about</a
+          >
+          <a
+            class="menu-a"
+            href="index.html#news"
+            onclick="document.getElementById('nav-sp').style.display = 'none'"
+            >news
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <div id="top">
+          <img id="main-img-pc" src="img/mv.jpg" alt="" />
+          <img src="img/mv_sp.jpg" alt="" id="main-img-sp" />
+          <h4>
+            無機質カフェにまた何度でも来たくなる<br />自慢の栗がとろけてく
+          </h4>
+        </div>
+
+        <section id="title">
+          <div id="title-div">
+            <h2 class="index-h2">~intoroduce~</h2>
+
+            <p id="title-p">
+              こんにちは！KURIcafe店長の佐藤です。<br />私は本場フランスで６年間修行を積んだのち、日本で念願のこのお店をオープンさせました。<br />当店では、国産の栗を使ったモンブランを始め、その他にも様々な美味しいスイーツが揃っています。<br />何度でも来たくなるようなカフェを目指しておりますので、ぜひ足を運んでいただけると幸いです。
+            </p>
+          </div>
+        </section>
+
+        <section id="menu">
+          <div id="menu-div">
+            <h2 class="index-h2">menu</h2>
+            <div id="menu-div2">
+              <div class="menu-info">
+                <img src="img/menu01.jpg" alt="" class="menu-img" />
+                <h3 class="menu-h3">パンケーキ</h3>
+                <p class="menu-p">
+                  パンケーキの上にイチゴが！<br />贅沢気分で素敵な一日を
+                </p>
+              </div>
+              <div class="menu-info">
+                <img src="img/menu02.jpg" alt="" class="menu-img" />
+                <h3 class="menu-h3">ドーナツ</h3>
+                <p class="menu-p">
+                  生地のサクサク感がたまらない！<br />抹茶で作ったドーナツです
+                </p>
+              </div>
+              <div class="menu-info">
+                <img src="img/menu03.jpg" alt="" class="menu-img" />
+                <h3 class="menu-h3">サンドウィッチ</h3>
+                <p class="menu-p">
+                  ボリューム満点！<br />具だくさんのサンドウィッチです
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div id="about-div">
+            <h2 class="index-h2">about</h2>
+            <div class="about-info">
+              <img src="img/04.jpg" alt="" class="about-img" />
+              <div class="exp">
+                <div class="about-exp">
+                  <h3 class="abou-h3">内装</h3>
+                  <p class="about-p">
+                    コンクリートの壁の無機質カフェ<br />どこか物足りないけど、居心地がいい<br />不思議な空間
+                  </p>
+                </div>
+                <button id="button1" onclick="location.href=''">more</button>
+              </div>
+            </div>
+
+            <div class="about-info">
+              <div class="exp">
+                <div class="about-exp">
+                  <h3 class="about-h3">こだわり</h3>
+                  <p class="about-p">
+                    カフェ好きの店長のこだわりがたくさん詰まったご飯と店内をお楽しみください
+                  </p>
+                </div>
+                <button id="button2" onclick="location.href=''">more</button>
+              </div>
+              <img src="img/05.jpg" alt="" class="about-img" />
+            </div>
+          </div>
+        </section>
+
+        <section id="news">
+          <div id="news-div">
+            <h2 class="index-h2">news</h2>
+            <div id="news-info">
+              <table id="news-table">
+                <tr class="table-tr">
+                  <td class="td1">2023/4</td>
+                  <td class="td2">新メニューが追加されました</td>
+                </tr>
+                <tr class="table-tr">
+                  <td class="td1">2023/12</td>
+                  <td class="td2">年末年始休暇のお知らせ</td>
+                </tr>
+                <tr class="table-tr">
+                  <td class="td1">2022/10</td>
+                  <td class="td2">ハロウィンフェア開催</td>
+                </tr>
+                <tr class="table-tr">
+                  <td id="td1-last">2022/7</td>
+                  <td id="td2-last">リニューアルオープンしました！</td>
+                </tr>
+              </table>
+            </div>
+            <button id="button3" onclick="location.href=''">more</button>
+          </div>
+        </section>
+
+        <section id="access">
+          <div id="access-div">
+            <h3 id="access-h3">KURIcafe</h3>
+            <p class="access-p">〒234-555</p>
+            <p class="access-p">東京都港区</p>
+            <p class="access-p">TEL:03-333-3333</p>
+            <div id="access-div2">
+              <img src="img/Facebook.png" alt="" class="access-img" /><img
+                src="img/Twitter.png"
+                alt=""
+                class="access-img"
+              /><img src="img/Instagram.png" alt="" class="access-img" /><img
+                src="img/LINE.png"
+                alt=""
+                class="access-img"
+              />
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9491.706299414462!2d139.66473866433327!3d35.65744220586037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bdf86855c89%3A0x3b059cb78063d0d4!2z5LiL5YyX5rKi44K344Oj44Oz44Kw44Oq44Op!5e0!3m2!1sja!2sjp!4v1696041240148!5m2!1sja!2sjp"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <footer>
+          <span id="copylight">&copy;2022 KURIcafe Co.Ltd.</span>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
